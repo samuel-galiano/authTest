@@ -1,8 +1,10 @@
 import * as React from "react";
 import * as Native from "react-native"
 import * as Animatable from "react-native-animatable"
+import { useNavigation } from "@react-navigation/native";
 
 export function Welcome() {
+    const navigation = useNavigation()
     return (
         <Native.View style={styles.container}>
             <Native.View style={styles.containerText}>
@@ -10,7 +12,7 @@ export function Welcome() {
                 <Native.Text style={styles.text}>faça login para começar...</Native.Text>
             </Native.View>
             <Animatable.View style={styles.containerForm} animation="fadeInUp" delay={1250}>
-                <Native.TouchableOpacity style={styles.button}>
+                <Native.TouchableOpacity style={styles.button} onPress={() => navigation.navigate("Login")}>
                     <Native.Text style={styles.buttonText}>ACESSAR</Native.Text>
                 </Native.TouchableOpacity>
             </Animatable.View>
