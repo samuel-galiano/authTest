@@ -1,2 +1,2 @@
 # authTest
-Aplicação destinada aos estudos de React Native & Authenticação.
+Aplicação destinada aos estudos de React Native, Authenticação & Animação.
