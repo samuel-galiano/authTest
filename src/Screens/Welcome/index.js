@@ -20,7 +20,7 @@ export function Welcome() {
 const styles = Native.StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: "#38A69D",
+        backgroundColor: "#86101D",
     },
     containerForm: {
         flex: 1,
@@ -46,7 +46,7 @@ const styles = Native.StyleSheet.create({
         fontSize: 20
     },
     button: {
-        backgroundColor: "#38A69D",
+        backgroundColor: "#86101D",
         padding: 20,
         borderRadius: 10,
         width: '60%'
@@ -55,6 +55,7 @@ const styles = Native.StyleSheet.create({
         color: "#ebebeb",
         justifyContent: "center",
         alignContent: "center",
-        alignSelf: "center"
+        alignSelf: "center",
+        fontWeight: "bold"
     }
 })
