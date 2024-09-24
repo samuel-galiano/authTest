@@ -12,7 +12,7 @@ export function Welcome() {
                 <Native.Text style={styles.title}>Monitore e Organize</Native.Text>
                 <Native.Text style={styles.text}>faça login para começar...</Native.Text>
             </Native.View>
-            <Animatable.View style={styles.containerForm} animation="fadeInUp" delay={1250}>
+            <Animatable.View style={styles.containerForm} animation={"fadeInUp"} delay={1250}>
                 <Native.TouchableOpacity style={styles.button} onPress={() => navigation.navigate("Login")}>
                     <Native.Text style={styles.buttonText}>ACESSAR</Native.Text>
                 </Native.TouchableOpacity>
