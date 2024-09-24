@@ -1,5 +1,6 @@
 import * as React from "react";
 import * as Native from "react-native"
+import * as Animatable from "react-native-animatable"
 
 export function Welcome() {
     return (
@@ -8,11 +9,11 @@ export function Welcome() {
                 <Native.Text style={styles.title}>Monitore e Organize</Native.Text>
                 <Native.Text style={styles.text}>faça login para começar...</Native.Text>
             </Native.View>
-            <Native.View style={styles.containerForm}>
+            <Animatable.View style={styles.containerForm} animation="fadeInUp" delay={1250}>
                 <Native.TouchableOpacity style={styles.button}>
                     <Native.Text style={styles.buttonText}>ACESSAR</Native.Text>
                 </Native.TouchableOpacity>
-            </Native.View>
+            </Animatable.View>
         </Native.View>
     );
 }
@@ -32,7 +33,7 @@ const styles = Native.StyleSheet.create({
         borderTopRightRadius: 20
     },
     containerText: {
-        flex: 5,
+        flex: 6,
         justifyContent: "center",
         alignItems: "center"
     },
