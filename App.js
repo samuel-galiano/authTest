@@ -7,7 +7,7 @@ export default function App() {
   return (
       <Navigation.NavigationContainer>
           <Native.StatusBar backgroundColor={"#38A69D"} barStyle={'light-content'} />
-          <Routes />
+          <Routes/>
       </Navigation.NavigationContainer>
   );
 }
