@@ -12,7 +12,7 @@ export function signInFunction(): Promise<Response> {
             res({
                 token: "uCBWIVSBWUIRVBWE89HC283DNCN.XonionifNEfnINIInOUNEBNPIvbuorj9-vr90jvwm",
                 user: {
-                    name: "Samuel Galiano",
+                    name: "Samuel Manfio Galiano",
                     email: "samuel@galiano.com"
                 }
             })
