@@ -1,4 +1,12 @@
-export function fazerLogin() {
+interface Response {
+    token: string
+    user: {
+        name: string
+        email: string
+    }
+}
+
+export function signInFunction(): Promise<Response> {
     return new Promise(res => {
         setTimeout(() => {
             res({

@@ -2,15 +2,19 @@ import * as React from "react";
 import * as Native from "react-native"
 import * as Animatable from "react-native-animatable"
 
+import AuthContext from "../../Contexts/auth";
 import { loginStyle } from "./style";
-import { fazerLogin } from "../../Service/auth";
+import { fazerLogin } from "../../Services/auth";
 
 export function Login() {
+    const { signed, user, signIn } = React.useContext(AuthContext)
+    console.log(signed, user)
     function handleSingIn() {
+        signIn()
         // pegar matricula e senha do usuario
-        fazerLogin().then(res => {
-            console.log(res)
-        })
+        // fazerLogin().then(res => {
+        //     console.log(res)
+        // })
     }
     return (
         <Native.View style={styles.container}>
