@@ -1,7 +1,7 @@
 export const loginStyle = {
     container: {
         flex: 1,
-        backgroundColor: "#86101D"
+        backgroundColor: "#23356D"
     },
     containerHeader: {
         marginTop: '14%',
@@ -27,12 +27,13 @@ export const loginStyle = {
     },
     input: {
         borderBottomWidth: 1,
+        borderColor: "#4D4D4D",
         height: 40,
         marginBottom: 12,
         fontSize: 16
     },
     button: {
-        backgroundColor: "#86101D",
+        backgroundColor: "#23356D",
         width: '100%',
         borderRadius: 10,
         paddingVertical: 8,

@@ -9,7 +9,7 @@ export function Welcome() {
     return (
         <Native.View style={styles.container}>
             <Native.View style={styles.containerText}>
-                <Native.Text style={styles.title}>Monitore e Organize</Native.Text>
+                <Native.Text style={styles.title}>Sistema de Autenticação Teste</Native.Text>
                 <Native.Text style={styles.text}>faça login para começar...</Native.Text>
             </Native.View>
             <Animatable.View style={styles.containerForm} animation={"fadeInUp"} delay={1250}>

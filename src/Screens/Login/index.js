@@ -14,7 +14,7 @@ export function Login() {
                 <Native.TextInput placeholder="Digite uma matrícula..." style={styles.input} />
 
                 <Native.Text style={styles.tittle}>Senha</Native.Text>
-                <Native.TextInput placeholder="Digite ua senha" style={styles.input} />
+                <Native.TextInput placeholder="Digite uma senha" style={styles.input} secureTextEntry/>
 
                 <Native.TouchableOpacity style={styles.button}>
                     <Native.Text style={styles.buttonText}>LOGIN</Native.Text>

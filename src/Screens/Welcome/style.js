@@ -1,7 +1,7 @@
 export const welcomeStyle = {
     container: {
         flex: 1,
-        backgroundColor: "#86101D",
+        backgroundColor: "#23356D",
     },
     containerForm: {
         flex: 1,
@@ -27,7 +27,7 @@ export const welcomeStyle = {
         fontSize: 20
     },
     button: {
-        backgroundColor: "#86101D",
+        backgroundColor: "#23356D",
         padding: 20,
         borderRadius: 10,
         width: '60%'
