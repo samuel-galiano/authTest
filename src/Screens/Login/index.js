@@ -1,9 +1,17 @@
 import * as React from "react";
 import * as Native from "react-native"
 import * as Animatable from "react-native-animatable"
+
 import { loginStyle } from "./style";
+import { fazerLogin } from "../../Service/auth";
 
 export function Login() {
+    function handleSingIn() {
+        // pegar matricula e senha do usuario
+        fazerLogin().then(res => {
+            console.log(res)
+        })
+    }
     return (
         <Native.View style={styles.container}>
             <Animatable.View animation={"fadeInLeft"} delay={500} style={styles.containerHeader}>
@@ -16,7 +24,7 @@ export function Login() {
                 <Native.Text style={styles.tittle}>Senha</Native.Text>
                 <Native.TextInput placeholder="Digite uma senha" style={styles.input} secureTextEntry/>
 
-                <Native.TouchableOpacity style={styles.button}>
+                <Native.TouchableOpacity style={styles.button} onPress={() => handleSingIn()}>
                     <Native.Text style={styles.buttonText}>LOGIN</Native.Text>
                 </Native.TouchableOpacity>
                 <Native.TouchableOpacity style={styles.buttonRegister}>

@@ -21,6 +21,7 @@ export const welcomeStyle = {
         color: "#ebebeb",
         fontSize: 40,
         fontWeight: "bold",
+        textAlign: "center"
     },
     text: {
         color: "#ebebeb",

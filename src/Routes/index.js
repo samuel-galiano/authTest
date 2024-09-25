@@ -1,15 +1,10 @@
 import * as StackNavigation from "@react-navigation/native-stack"
-import {Welcome} from "../Screens/Welcome"
-import {Login} from "../Screens/Login"
-
-const Stack = StackNavigation.createNativeStackNavigator()
+import AuthRoutes from "./whileNotAuth.routes"
+import AppRoutes from "./whileAuth.routes"
 
 function Routes() {
     return (
-        <Stack.Navigator screenOptions={{headerShown: false}} initialRouteName="Welcome">
-            <Stack.Screen name="Welcome" component={Welcome}/>
-            <Stack.Screen name="Login" component={Login}/>
-        </Stack.Navigator>
+        <AuthRoutes />
     )
 }
 
