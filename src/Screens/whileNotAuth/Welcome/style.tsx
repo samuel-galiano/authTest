@@ -1,4 +1,6 @@
-export const welcomeStyle = {
+import { StyleSheet } from "react-native"
+
+export const welcomeStyle = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: "#23356D",
@@ -40,4 +42,4 @@ export const welcomeStyle = {
         alignSelf: "center",
         fontWeight: "bold"
     }
-}
+})
